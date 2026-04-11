@@ -66,11 +66,11 @@ where:
 ```
 strata_info = [
     [(0, 0.5), 30],
-    [(0.5, 0.6),50],
-    [(0.6, 0.7),50],
-    [(0.7, 0.8),50],
-    [(0.8, 0.9),50],
-    [(0.9, 1.0),50]
+    [(0.5, 0.6), 50],
+    [(0.6, 0.7), 50],
+    [(0.7, 0.8), 50],
+    [(0.8, 0.9), 50],
+    [(0.9, 1.0), 50]
 ]
 ```
 This specification divides the standard normal distribution according to quantiles of its cumulative distribution function $\Phi$. In particular, the first stratum corresponds to
@@ -84,9 +84,9 @@ You can modify both the construction of the strata and the number of samples. Fo
 ```
 strata_info = [
     [(0, 0.25), 100],
-    [(0.25, 0.5),100],
-    [(0.5, 0.75),100],
-    [(0.75, 1.0),100]
+    [(0.25, 0.5), 100],
+    [(0.5, 0.75), 100],
+    [(0.75, 1.0), 100]
 ]
 ```
 
