@@ -73,11 +73,16 @@ strata_info = [
     [(0.9, 1.0), 50]
 ]
 ```
-This specification divides the standard normal distribution according to quantiles of its cumulative distribution function $\Phi$. In particular, the first stratum corresponds to
-$$(\Phi^{-1}(0), \Phi^{-1}(0.5)) = (- \infty, 0),$$
+This specification divides the distribution of the Wiener process at terminal time $W(T)$ (i.e., N(0,T)) according to quantiles of its cumulative distribution function $\Phi_T(\cdot) = \Phi(\cdot/ \sqrt{T})$.
+In particular, the first stratum corresponds to
+
+$$ (\Phi^{-1}_T(0), \Phi^{-1}_T(0.5)) = (- \infty, 0), $$
+
 and we generate 30 Wiener process sample paths whose terminal values fall within this interval.
 Similarly, the second stratum corresponds to
-$$(\Phi^{-1}(0.5), \Phi^{-1}(0.6)) = (0, 0.2533)$$
+
+$$ (\Phi^{-1}_T(0.5), \Phi^{-1}_T(0.6)) = (0, \Phi(0.6) \sqrt{T}) = (0, \ 0.2533 \sqrt{T})$$
+
 and we generate 50 sample paths whose terminal values lie in this interval. The same procedure is applied to the remaining strata, with the specified number of samples generated in each case.
 
 You can modify both the construction of the strata and the number of samples. For example, you may set this variable to:
