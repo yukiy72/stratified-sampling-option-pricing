@@ -110,3 +110,9 @@ Stratified sampling shows:
 - Lower variance (i.e., narrower confidence interval) compared to standard Monte Carlo
 
 ---
+
+## References
+
+1. Glasserman, P. (2003) *Monte Carlo Methods in Financial Engineering*. Springer, New York.
+
+---
